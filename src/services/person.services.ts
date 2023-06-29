@@ -1,10 +1,10 @@
-import findNameById from "../repositories/person.repository.js";
+import findNameById from "../repositories/person.repository";
 
 async function randomNumber() {
 
-    console.log("service")
+
     let numId = Math.floor(Math.random() * 4) + 1;
-    
+
     const person = await findNameById(numId)
 
     return person.rows

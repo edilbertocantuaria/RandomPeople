@@ -1,9 +1,7 @@
-import randomNumber from "../services/person.services.js"
+import randomNumber from "../services/person.services"
 
 async function getPerson(req, res) {
     try {
-        console.log("entrou no controller")
-
         const person = await randomNumber()
 
         res.send(person[0])
